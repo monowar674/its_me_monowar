@@ -1,0 +1,504 @@
+.lightfall {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+
+  pointer-events: none;
+
+  background:
+    var(--lightfall-bg);
+
+  opacity:
+    var(--lightfall-opacity);
+
+  isolation: isolate;
+}
+
+
+/* =========================================
+   BACKGROUND
+========================================= */
+
+.lightfall-background {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    radial-gradient(
+      ellipse at 50% 50%,
+      rgba(168, 85, 247, 0.08),
+      transparent 62%
+    );
+
+  z-index: 0;
+}
+
+
+/* =========================================
+   AMBIENT GLOWS
+========================================= */
+
+.lightfall-glow {
+  position: absolute;
+
+  width: 42vw;
+  height: 42vw;
+
+  max-width: 600px;
+  max-height: 600px;
+
+  border-radius: 50%;
+
+  filter: blur(100px);
+
+  opacity:
+    calc(
+      var(--lightfall-glow) * 0.22
+    );
+
+  will-change: transform;
+
+  z-index: 1;
+}
+
+
+.lightfall-glow-one {
+  top: -18%;
+
+  left: 5%;
+
+  animation:
+    lightfallFloatOne 12s ease-in-out
+    infinite alternate;
+}
+
+
+.lightfall-glow-two {
+  right: -15%;
+
+  top: 20%;
+
+  opacity:
+    calc(
+      var(--lightfall-glow) * 0.18
+    );
+
+  animation:
+    lightfallFloatTwo 15s ease-in-out
+    infinite alternate;
+}
+
+
+.lightfall-glow-three {
+  bottom: -25%;
+
+  left: 35%;
+
+  opacity:
+    calc(
+      var(--lightfall-glow) * 0.14
+    );
+
+  animation:
+    lightfallFloatThree 17s ease-in-out
+    infinite alternate;
+}
+
+
+/* =========================================
+   STREAK CONTAINER
+========================================= */
+
+.lightfall-streaks {
+  position: absolute;
+
+  inset: -20%;
+
+  z-index: 3;
+
+  transform:
+    perspective(800px)
+    rotateX(8deg);
+
+  transform-origin:
+    center center;
+}
+
+
+/* =========================================
+   STREAKS
+========================================= */
+
+.lightfall-streak {
+  position: absolute;
+
+  left:
+    var(--streak-left);
+
+  top: -15%;
+
+  width:
+    var(--lightfall-streak-width);
+
+  height:
+    var(--streak-height);
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      to bottom,
+      transparent,
+      var(--streak-color) 35%,
+      rgba(255, 255, 255, 0.95) 50%,
+      var(--streak-color) 65%,
+      transparent
+    );
+
+  box-shadow:
+    0 0 8px
+    var(--streak-color),
+
+    0 0 22px
+    var(--streak-color);
+
+  opacity:
+    calc(
+      0.12 +
+      var(--lightfall-density) * 0.65
+    );
+
+  transform:
+    translate3d(
+      0,
+      -20vh,
+      0
+    )
+    rotate(
+      calc(
+        -5deg +
+        var(--streak-index) * 0.35deg
+      )
+    );
+
+  animation:
+    lightfallTravel
+    var(--streak-duration)
+    var(--streak-delay)
+    linear
+    infinite;
+
+  will-change:
+    transform,
+    opacity;
+
+  filter:
+    blur(
+      calc(
+        var(--lightfall-streak-width) * 0.3
+      )
+    );
+}
+
+
+/* Every second streak is softer */
+
+.lightfall-streak:nth-child(even) {
+  opacity:
+    calc(
+      0.06 +
+      var(--lightfall-density) * 0.45
+    );
+
+  transform:
+    translate3d(
+      0,
+      -20vh,
+      0
+    )
+    rotate(4deg);
+
+  filter: blur(1px);
+}
+
+
+/* Some streaks are shorter */
+
+.lightfall-streak:nth-child(3n) {
+  height: 150px;
+
+  opacity:
+    calc(
+      0.08 +
+      var(--lightfall-density) * 0.4
+    );
+}
+
+
+.lightfall-streak:nth-child(5n) {
+  height: 320px;
+
+  opacity:
+    calc(
+      0.12 +
+      var(--lightfall-density) * 0.5
+    );
+}
+
+
+/* =========================================
+   CENTER GLOW
+========================================= */
+
+.lightfall-center-glow {
+  position: absolute;
+
+  width: 35vw;
+  height: 25vw;
+
+  max-width: 520px;
+  max-height: 360px;
+
+  top: 38%;
+  left: 50%;
+
+  transform:
+    translate(
+      -50%,
+      -50%
+    );
+
+  border-radius: 50%;
+
+  filter: blur(90px);
+
+  opacity:
+    calc(
+      var(--lightfall-background-glow) *
+      0.55
+    );
+
+  z-index: 2;
+
+  animation:
+    lightfallPulse
+    8s ease-in-out
+    infinite alternate;
+}
+
+
+/* =========================================
+   NOISE
+========================================= */
+
+.lightfall-noise {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 5;
+
+  pointer-events: none;
+
+  opacity: 0.035;
+
+  background-image:
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.4'/%3E%3C/svg%3E");
+
+  mix-blend-mode:
+    soft-light;
+}
+
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+@keyframes lightfallTravel {
+  0% {
+    transform:
+      translate3d(
+        0,
+        -35vh,
+        0
+      )
+      rotate(
+        calc(
+          -5deg +
+          var(--streak-index) * 0.35deg
+        )
+      );
+
+    opacity: 0;
+  }
+
+  12% {
+    opacity:
+      calc(
+        0.08 +
+        var(--lightfall-density) * 0.6
+      );
+  }
+
+  50% {
+    opacity:
+      calc(
+        0.12 +
+        var(--lightfall-density) * 0.7
+      );
+  }
+
+  85% {
+    opacity: 0.05;
+  }
+
+  100% {
+    transform:
+      translate3d(
+        0,
+        135vh,
+        0
+      )
+      rotate(
+        calc(
+          -5deg +
+          var(--streak-index) * 0.35deg
+        )
+      );
+
+    opacity: 0;
+  }
+}
+
+
+@keyframes lightfallFloatOne {
+  from {
+    transform:
+      translate3d(
+        -5%,
+        0,
+        0
+      )
+      scale(1);
+  }
+
+  to {
+    transform:
+      translate3d(
+        8%,
+        5%,
+        0
+      )
+      scale(1.08);
+  }
+}
+
+
+@keyframes lightfallFloatTwo {
+  from {
+    transform:
+      translate3d(
+        4%,
+        -3%,
+        0
+      )
+      scale(1);
+  }
+
+  to {
+    transform:
+      translate3d(
+        -8%,
+        7%,
+        0
+      )
+      scale(1.1);
+  }
+}
+
+
+@keyframes lightfallFloatThree {
+  from {
+    transform:
+      translate3d(
+        -5%,
+        5%,
+        0
+      )
+      scale(1);
+  }
+
+  to {
+    transform:
+      translate3d(
+        6%,
+        -5%,
+        0
+      )
+      scale(1.12);
+  }
+}
+
+
+@keyframes lightfallPulse {
+  from {
+    transform:
+      translate(
+        -50%,
+        -50%
+      )
+      scale(0.9);
+
+    opacity: 0.18;
+  }
+
+  to {
+    transform:
+      translate(
+        -50%,
+        -50%
+      )
+      scale(1.08);
+
+    opacity: 0.4;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .lightfall-glow {
+    filter: blur(75px);
+  }
+
+  .lightfall-streak:nth-child(n + 11) {
+    display: none;
+  }
+
+  .lightfall-noise {
+    opacity: 0.02;
+  }
+}
+
+
+/* =========================================
+   REDUCE MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .lightfall *,
+  .lightfall {
+    animation: none !important;
+  }
+}
