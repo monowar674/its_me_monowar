@@ -87,7 +87,7 @@ function Contact() {
 
             {/* Email */}
             <a
-              href="mailto:your@email.com"
+              href="mailto:monowarhossain2155@gmail.com"
               className="contact-direct cursor-target"
             >
               <div className="contact-direct-icon">
@@ -96,7 +96,7 @@ function Contact() {
 
               <div>
                 <small>Email</small>
-                <strong>your@email.com</strong>
+                <strong>monowarhossain2155@email.com</strong>
               </div>
 
               <ArrowUpRight size={18} />
@@ -123,7 +123,7 @@ function Contact() {
             <div className="contact-socials">
 
   <a
-    href="#"
+    href="https://www.facebook.com/dev.monowar"
     className="cursor-target"
     aria-label="Facebook"
   >
@@ -131,7 +131,7 @@ function Contact() {
   </a>
 
   <a
-    href="#"
+    href="https://www.instagram.com/md.monowar.090909/"
     className="cursor-target"
     aria-label="Instagram"
   >
@@ -139,7 +139,7 @@ function Contact() {
   </a>
 
   <a
-    href="#"
+    href="https://www.linkedin.com/in/monowar-dev/"
     className="cursor-target"
     aria-label="LinkedIn"
   >

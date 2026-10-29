@@ -54,45 +54,45 @@ const people = {
     ],
   },
 
-  shakibur: {
-    number: "02",
-    name: "Md. Shakibur Rahman",
-    role: "Backend Developer",
+  // shakibur: {
+  //   number: "02",
+  //   name: "Md. Shakibur Rahman",
+  //   role: "Backend Developer",
 
-    intro:
-      "I focus on backend development and the systems behind modern web applications, working with APIs, databases and application logic.",
+  //   intro:
+  //     "I focus on backend development and the systems behind modern web applications, working with APIs, databases and application logic.",
 
-    experiences: [
-      {
-        title: "Backend Development",
-        icon: Server,
-        text:
-          "Building reliable server-side applications and backend systems that support modern digital products.",
-        tags: ["Node.js", "Backend", "Server"],
-      },
-      {
-        title: "API Development",
-        icon: Code2,
-        text:
-          "Developing structured APIs that connect frontend applications with backend services and data.",
-        tags: ["REST API", "API", "Integration"],
-      },
-      {
-        title: "Database",
-        icon: Database,
-        text:
-          "Working with application data and database structures to build reliable and organized systems.",
-        tags: ["Database", "Data", "Backend"],
-      },
-      {
-        title: "Digital Marketing",
-        icon: BarChart3,
-        text:
-          "Supporting digital growth through campaign planning, online presence and marketing-focused solutions.",
-        tags: ["Marketing", "Analytics", "Growth"],
-      },
-    ],
-  },
+  //   experiences: [
+  //     {
+  //       title: "Backend Development",
+  //       icon: Server,
+  //       text:
+  //         "Building reliable server-side applications and backend systems that support modern digital products.",
+  //       tags: ["Node.js", "Backend", "Server"],
+  //     },
+  //     {
+  //       title: "API Development",
+  //       icon: Code2,
+  //       text:
+  //         "Developing structured APIs that connect frontend applications with backend services and data.",
+  //       tags: ["REST API", "API", "Integration"],
+  //     },
+  //     {
+  //       title: "Database",
+  //       icon: Database,
+  //       text:
+  //         "Working with application data and database structures to build reliable and organized systems.",
+  //       tags: ["Database", "Data", "Backend"],
+  //     },
+  //     {
+  //       title: "Digital Marketing",
+  //       icon: BarChart3,
+  //       text:
+  //         "Supporting digital growth through campaign planning, online presence and marketing-focused solutions.",
+  //       tags: ["Marketing", "Analytics", "Growth"],
+  //     },
+  //   ],
+  // },
 };
 
 function Experience() {
@@ -161,7 +161,7 @@ function Experience() {
             <ArrowUpRight size={17} />
           </button>
 
-          <button
+          {/* <button
             className={
               activePerson === "shakibur"
                 ? "experience-tab active"
@@ -177,7 +177,7 @@ function Experience() {
             </span>
 
             <ArrowUpRight size={17} />
-          </button>
+          </button> */}
         </motion.div>
 
         {/* EXPERIENCE CONTENT */}

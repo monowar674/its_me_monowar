@@ -28,12 +28,14 @@ const projects = [
     tags: ["Web Development", "E-commerce", "Business Website"],
     icon: Code2,
     liveUrl: "https://arnikaenterprise.com/",
+    caseStudyUrl: "https://drive.google.com/file/d/1wI0rvXgzq4Uj1TgYMmdizkyPM2plyA1T/view?usp=sharing",
+
     featured: true,
   },
 
   {
     id: "02",
-    title: "Meta Ads message Campaign",
+    title: "Meta Ads — message Campaign",
     category: "Digital Marketing",
     type: "Performance Marketing",
     description:
@@ -49,23 +51,29 @@ const projects = [
       "Audience Targeting",
       "Campaign Optimization",
       "Performance Analytics"],
+
+    metrics: [
+      { label: "Website Purchases", value: "768" },
+      { label: "Cost per Purchase", value: "$39.89" },
+      { label: "Total Ad Spend", value: "$30,632.76" },
+    ],
     icon: BarChart3,
+    caseStudyUrl: "https://drive.google.com/file/d/1wI0rvXgzq4Uj1TgYMmdizkyPM2plyA1T/view?usp=sharing",
     liveUrl: "https://drive.google.com/file/d/1wI0rvXgzq4Uj1TgYMmdizkyPM2plyA1T/view?usp=sharing",
+
   },
 
   {
-
     id: "03",
     title: "Meta Ads — Moto Sales Campaign",
     category: "Digital Marketing",
     type: "Meta Ads | E-commerce Sales",
     description:
       "Executed a performance-driven Meta Ads sales campaign for NumbSkull, focused on generating website purchases through campaign management, audience targeting, creative testing, and ongoing optimization. During the selected reporting period, the campaign generated 768 website purchases at an average cost of $39.89 per purchase, with a total ad spend of $30,632.76.",
-    image: "/projects/project-moto-sales.jpeg",
+    image: "/projects/project2-moto-sales.jpeg",
     images: [
       "/projects/project2-moto-sales.jpeg",
       "/projects/project2-moto-sales-2.jpg",
-      "/projects/project-moto-sales-3.jpeg",
     ],
     tags: [
       "Meta Ads",
@@ -80,38 +88,110 @@ const projects = [
       { label: "Total Ad Spend", value: "$30,632.76" },
     ],
     icon: BarChart3,
-    liveUrl: "#",
+    caseStudyUrl: "https://drive.google.com/drive/folders/1uY8EE8ICFeBQOvq6hDr4HhwReVz6DgkH?usp=sharing",
+    liveUrl: "https://drive.google.com/drive/folders/1uY8EE8ICFeBQOvq6hDr4HhwReVz6DgkH?usp=sharing",
+
 
   },
 
   {
     id: "04",
-    title: "E-commerce Store",
-    category: "Web Development",
-    type: "E-commerce",
+    title: "Meta Ads — simplistore Lead & Call Campaign",
+    category: "Digital Marketing",
+    type: "Meta Ads | Searvice Lead",
     description:
-      "A modern e-commerce experience designed around product discovery, user experience and a smooth shopping journey.",
-    image: "/projects/project-ecommerce.jpg",
-    tags: ["E-commerce", "UI/UX", "Web Development"],
-    icon: ShoppingBag,
-    liveUrl: "#",
+      "Managed Meta Ads campaigns focused on generating phone calls, capturing leads through instant forms, and driving website traffic. The campaign strategy included audience targeting, budget management, and performance monitoring to improve lead generation and connect potential customers with the business.",
+    image: "/projects/project3-SIMPLI-call1.jpg",
+    images: [
+      "/projects/project3-SIMPLI-call1.jpg",
+      "/projects/project3-SIMPLI-call2.jpg",
+    ],
+    tags: [
+      "Meta Ads",
+      "Lead Generation",
+      "Call Campaigns",
+      "Audience Targeting",
+      "Campaign Analytics",
+    ],
+    metrics: [
+      { label: "Calls Placed", value: "220" },
+      { label: "Cost per Call", value: "$8.77" },
+      { label: "Leads Generated", value: "59" },
+      { label: "Cost per Lead", value: "$20.25" },
+      { label: "Landing Page Views", value: "368" },
+      { label: "Cost per Landing Page View", value: "$0.53" },
+      { label: "Total Ad Spend", value: "$2,473.31" },
+      { label: "Total Impressions", value: "313,133" },
+      { label: "Total Clicks", value: "6,795" },
+    ],
+    icon: BarChart3,
+    caseStudyUrl: "https://drive.google.com/drive/folders/1uY8EE8ICFeBQOvq6hDr4HhwReVz6DgkH?usp=sharing",
+    liveUrl: "https://drive.google.com/drive/folders/1uY8EE8ICFeBQOvq6hDr4HhwReVz6DgkH?usp=sharing",
+
+
   },
+
 
   {
     id: "05",
-    title: "Brand Campaign",
-    category: "Creative",
-    type: "Digital Campaign",
+    title: "Facebook Media Management",
+    category: "Social Media",
+    type: "Social Media Strategy & Content Management",
     description:
-      "A complete digital campaign combining visual design, promotional content and creative communication for a stronger online presence.",
-    image: "/projects/project-brand.jpg",
-    tags: ["Branding", "Creative", "Campaign"],
+      "Managed social media for Cape Family Medical Clinic, focusing on content creation, consistent publishing, and audience engagement. During October 2026, the clinic’s content generated 77,278 views, with views increasing by 500% and watch time growing by 850%. The campaign also achieved 714 three-second video views, demonstrating improved content visibility and video engagement across social media.",
+    image: "/projects/capefemily_facebook_management1.jpeg",
+    images: [
+      "/projects/capefemily_facebook_management1.jpeg",
+      "/projects/capefemily_facebook_management2.jpeg",
+    ],
+    tags: [
+      "Meta Ads",
+      "E-commerce Sales",
+      "Purchase Optimization",
+      "Audience Targeting",
+      "Campaign Analytics"
+    ],
+    metrics: [
+      { label: "Website Purchases", value: "768" },
+      { label: "Cost per Purchase", value: "$39.89" },
+      { label: "Total Ad Spend", value: "$30,632.76" },
+    ],
     icon: Palette,
-    liveUrl: "#",
+    caseStudyUrl: "https://drive.google.com/drive/folders/1uY8EE8ICFeBQOvq6hDr4HhwReVz6DgkH?usp=sharing",
+    liveUrl: "https://drive.google.com/drive/folders/1uY8EE8ICFeBQOvq6hDr4HhwReVz6DgkH?usp=sharing",
   },
 
   {
     id: "06",
+    title: "Facebook Media Management",
+    category: "Social Media",
+    type: "Social Media Strategy & Content Management",
+    description:
+      "Managed social media for Cape Family Medical Clinic, focusing on content creation, consistent publishing, and audience engagement. During October 2026, the clinic’s content generated 77,278 views, with views increasing by 500% and watch time growing by 850%. The campaign also achieved 714 three-second video views, demonstrating improved content visibility and video engagement across social media.",
+    image: "/projects/capefemily_facebook_management1.jpeg",
+    images: [
+      "/projects/capefemily_facebook_management1.jpeg",
+    ],
+    tags: [
+      "Meta Ads",
+      "E-commerce Sales",
+      "Purchase Optimization",
+      "Audience Targeting",
+      "Campaign Analytics"
+    ],
+    metrics: [
+      { label: "Website Purchases", value: "768" },
+      { label: "Cost per Purchase", value: "$39.89" },
+      { label: "Total Ad Spend", value: "$30,632.76" },
+    ],
+    icon: Palette,
+    caseStudyUrl: "https://drive.google.com/drive/folders/13PEGXZYCK45vGkzJRuI-9XmUkMZ_IDGj?usp=sharing",
+    liveUrl: "https://drive.google.com/drive/folders/13PEGXZYCK45vGkzJRuI-9XmUkMZ_IDGj?usp=sharing",
+
+  },
+
+  {
+    id: "07",
     title: "Analytics & Tracking",
     category: "Analytics",
     type: "Conversion Tracking",
@@ -120,7 +200,8 @@ const projects = [
     image: "/projects/project-analytics.jpg",
     tags: ["GA4", "GTM", "Tracking"],
     icon: LineChart,
-    liveUrl: "#",
+    caseStudyUrl: "https://drive.google.com/drive/folders/1uY8EE8ICFeBQOvq6hDr4HhwReVz6DgkH?usp=sharing",
+    liveUrl: "https://drive.google.com/drive/folders/1uY8EE8ICFeBQOvq6hDr4HhwReVz6DgkH?usp=sharing",
   },
 ];
 
@@ -413,17 +494,33 @@ function Projects() {
                   ))}
                 </div>
 
-                {selectedProject.liveUrl !== "#" && (
-                  <a
-                    href={selectedProject.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="modal-live-button"
-                  >
-                    Visit Live Website
-                    <ExternalLink size={17} />
-                  </a>
-                )}
+                <div className="modal-action-buttons">
+
+
+                  {selectedProject.caseStudyUrl && (
+                    <a
+                      href={selectedProject.caseStudyUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="modal-live-button"
+                    >
+                      View Case Study
+                      <ExternalLink size={17} />
+                    </a>
+                  )}
+
+                  {selectedProject.liveUrl && selectedProject.liveUrl !== "#" && (
+                    <a
+                      href={selectedProject.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="modal-live-button"
+                    >
+                      Preview
+                      <ExternalLink size={17} />
+                    </a>
+                  )}
+                </div>
 
               </div>
             </motion.div>

@@ -149,7 +149,7 @@ function Footer() {
             <div className="footer-socials">
 
               <a
-                href="#"
+                href="https://www.facebook.com/dev.monowar"
                 className="cursor-target"
                 aria-label="Facebook"
               >
@@ -157,7 +157,7 @@ function Footer() {
               </a>
 
               <a
-                href="#"
+                href="https://www.instagram.com/md.monowar.090909/"
                 className="cursor-target"
                 aria-label="Instagram"
               >
@@ -165,7 +165,7 @@ function Footer() {
               </a>
 
               <a
-                href="#"
+                href="https://www.linkedin.com/in/monowar-dev/"
                 className="cursor-target"
                 aria-label="LinkedIn"
               >

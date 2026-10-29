@@ -413,53 +413,7 @@ function App() {
       },
     },
 
-    {
-      id: "shakibur",
-
-      name: "Md. Shakibur Rahman",
-
-      shortName: "Shakibur",
-
-      position: "COO",
-
-      role: "Backend Developer",
-
-      image:
-        "/team-placeholder.jpg",
-
-      bio:
-        "I’m a Backend Developer focused on building reliable, scalable, and efficient web solutions. I enjoy working with server-side technologies, databases, APIs, and application logic to create the foundation that powers modern digital experiences.",
-
-      experience: [
-        "1.5+ Years — Web Development",
-        "1+ Year — Digital Marketing",
-      ],
-
-      education: [
-        "Diploma in Computer Science",
-      ],
-
-      tools: [
-        "Node.js",
-        "Express.js",
-        "REST APIs",
-        "JavaScript",
-        "MySQL",
-        "MongoDB",
-        "Git & GitHub",
-        "Postman",
-        "Firebase",
-        "Vercel",
-        "Render",
-      ],
-
-      socials: {
-        facebook: "#",
-        instagram: "#",
-        linkedin: "#",
-        whatsapp: "#",
-      },
-    },
+    
   ];
 
   /* =========================================
