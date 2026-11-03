@@ -24,7 +24,8 @@ const projects = [
     type: "Business / E-commerce",
     description:
       "A modern business and e-commerce website built to showcase interior products, support product browsing, and provide a smooth online shopping experience.",
-    image: "/projects/arnika-enterprise.png",
+    image: "/projects/arnika_web.jpg",
+    
     tags: ["Web Development", "E-commerce", "Business Website"],
     icon: Code2,
     liveUrl: "https://arnikaenterprise.com/",
